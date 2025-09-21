@@ -9,7 +9,14 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@styles': 'src/styles',
-			'@styles/*': 'src/styles/*'
+			'@styles/*': 'src/styles/*',
+			'@components': 'src/lib/components',
+			'@components/*': 'src/lib/components/*',
+			'@resources': 'src/resources',
+			'@resources/*': 'src/resources/*'
+		},
+		prerender: {
+			entries: ['*']
 		}
 	}
 };
