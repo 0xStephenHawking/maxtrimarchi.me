@@ -83,23 +83,20 @@
 </section>
 
 <style lang="scss">
-	#learn {
-		height: calc(100vh - 168px);
+	@use 'sass:map';
+	@use '@picocss/pico/scss/settings' as settings;
 
+	$lg: map.get(map.get(settings.$breakpoints, lg), breakpoint);
+
+	#learn {
 		.languages-list {
 			display: flex;
-			flex-wrap: wrap;
 			column-gap: 50px;
 			margin: 100px 0;
-			justify-content: space-evenly;
-
-			& > div {
-				max-height: fit-content;
-			}
+			flex-wrap: wrap;
 
 			progress {
-				max-width: 350px;
-				min-width: 250px;
+				min-width: 100px;
 			}
 
 			img {
@@ -112,6 +109,29 @@
 				display: flex;
 				flex-direction: column;
 				margin-bottom: 2rem;
+				flex: 1 1 30%;
+				justify-content: space-between;
+			}
+		}
+
+		@media only screen and (min-width: $lg) {
+			height: calc(100vh - 168px);
+
+			.languages-list {
+				justify-content: space-evenly;
+
+				[data-lang-lvl] {
+					min-width: 250px;
+				}
+			}
+
+			progress {
+				width: 100%;
+
+				@media only screen and (min-width: $lg) {
+					max-width: 350px;
+					min-width: 250px;
+				}
 			}
 		}
 	}

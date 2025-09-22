@@ -7,7 +7,14 @@
 <Learn />
 
 <style lang="scss">
-	:global(section:not(#hero)) {
-		padding: 50px;
+	@use 'sass:map';
+	@use '@picocss/pico/scss/settings' as settings;
+
+	$lg: map.get(map.get(settings.$breakpoints, lg), breakpoint);
+
+	@media only screen and (min-width: $lg) {
+		:global(section:not(#hero)) {
+			padding: 50px;
+		}
 	}
 </style>

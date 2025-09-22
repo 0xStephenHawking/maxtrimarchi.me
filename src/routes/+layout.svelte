@@ -68,17 +68,24 @@
 </footer>
 
 <style lang="scss">
+	@use 'sass:map';
+	@use '@picocss/pico/scss/settings' as settings;
+
+	$sm: map.get(map.get(settings.$breakpoints, sm), breakpoint);
+
 	:global(body) {
-		display: grid;
-		grid-template-rows: auto 1fr min-content;
-		min-height: 100vh;
+		@media only screen and (min-width: $sm) {
+			display: grid;
+			grid-template-rows: auto 1fr min-content;
+			min-height: 100vh;
 
-		header nav :global(svg) {
-			height: 1.425rem;
-		}
+			header nav :global(svg) {
+				height: 1.425rem;
+			}
 
-		footer {
-			font-size: 16px;
+			footer {
+				font-size: 16px;
+			}
 		}
 	}
 </style>

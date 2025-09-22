@@ -53,7 +53,8 @@
 		opacity: 0.3;
 		transition: opacity ease-in-out 150ms;
 
-		&.active {
+		&.active,
+		&:hover {
 			opacity: 1;
 		}
 	}
