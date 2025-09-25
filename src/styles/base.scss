@@ -1,2 +1,3 @@
-@use 'fonts';
-@use 'theme';
+@forward 'fonts';
+@forward 'theme';
+@forward 'flex';
