@@ -42,13 +42,13 @@
 			"label": "Shopware",
 			"lvl": 96,
 			"color": "#189EFF",
-			"img": "shopware-logo.png"
+			"img": "shopware-logo.webp"
 		},
 		{
 			"label": "Sass",
 			"lvl": 100,
 			"color": "#CD6799",
-			"img": "sass-logo.png"
+			"img": "sass-logo.webp"
 		},
 		{
 			"label": "Svelte",
