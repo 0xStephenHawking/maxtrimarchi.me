@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import knowladge from '@resources/knowladge.json';
-	import { MarqueeSlider, MarqueeItem } from '@components/MarqueeSlider';
 
 	let section: HTMLElement;
 
@@ -41,11 +40,11 @@
 <section id="learn" bind:this={section}>
 	<h2>This is what I learned trough out the years.</h2>
 
-	<div class="languages-list">
+	<div class="languages-list d-flex flex-wrap">
 		{#each knowladge.languages as language}
-			<div class="mono" data-lang-lvl={language.lvl}>
+			<div class="d-flex-col mono" data-lang-lvl={language.lvl}>
 				<label for={`p-${language.label}`}>
-					<img src={`/logos/${language.img}`} alt={language.label} loading="lazy" />
+					<img class="icon" src={`/logos/${language.img}`} alt={language.label} loading="lazy" />
 					{language.label}
 				</label>
 
@@ -67,19 +66,14 @@
 		{/each}
 	</div>
 
-	<MarqueeSlider style="margin-left: calc(25% / 2)" width="75%">
-		{#each knowladge.misc as item}
-			<MarqueeItem>
-				<img
-					src={`/logos/${item.img}`}
-					alt={item.label}
-					title={item.label}
-					height="80px"
-					width="80px"
-				/>
-			</MarqueeItem>
+	<div class="d-flex flex-wrap gap-3 justify-center">
+		{#each knowladge.misc as language}
+			<div class="mono">
+				<img class="icon" src={`/logos/${language.img}`} alt={language.label} loading="lazy" />
+				{language.label}
+			</div>
 		{/each}
-	</MarqueeSlider>
+	</div>
 </section>
 
 <style lang="scss">
@@ -90,10 +84,8 @@
 
 	#learn {
 		.languages-list {
-			display: flex;
 			column-gap: 50px;
-			margin: 100px 0;
-			flex-wrap: wrap;
+			margin-top: 50px;
 
 			progress {
 				min-width: 100px;
@@ -101,13 +93,9 @@
 
 			img {
 				user-select: none;
-				height: 45px;
-				width: 45px;
 			}
 
 			[data-lang-lvl] {
-				display: flex;
-				flex-direction: column;
 				margin-bottom: 2rem;
 				flex: 1 1 30%;
 				justify-content: space-between;
@@ -119,6 +107,7 @@
 
 			.languages-list {
 				justify-content: space-evenly;
+				margin: 100px 0 50px 0;
 
 				[data-lang-lvl] {
 					min-width: 250px;
