@@ -1,0 +1,25 @@
+.d-flex {
+	display: flex;
+
+	&-col {
+		flex-direction: column;
+	}
+
+	&.flex-wrap {
+		flex-wrap: wrap;
+	}
+}
+
+.gap {
+	$gap-multiplier: 1.25;
+
+	@for $i from 1 through 5 {
+		&-#{$i} {
+			gap: $i * $gap-multiplier + 0em;
+		}
+	}
+}
+
+.justify-center {
+	justify-content: center;
+}
