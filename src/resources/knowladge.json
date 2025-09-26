@@ -1,0 +1,72 @@
+{
+	"languages": [
+		{
+			"label": "Rust",
+			"lvl": 35,
+			"color": "#B7410E",
+			"img": "rustacean-logo.svg"
+		},
+		{
+			"label": "PHP",
+			"lvl": 100,
+			"color": "#777BB4",
+			"img": "php-logo.svg"
+		},
+		{
+			"label": "TypeScript",
+			"lvl": 100,
+			"color": "#3178c6",
+			"img": "ts-logo.svg"
+		},
+		{
+			"label": "Java",
+			"lvl": 100,
+			"color": "#E76F00",
+			"img": "java-logo.svg"
+		},
+		{
+			"label": "Python",
+			"lvl": 47,
+			"color": "#ffd43b",
+			"img": "python-logo.svg"
+		},
+		{
+			"label": "Go",
+			"lvl": 100,
+			"color": "#00ACD7",
+			"img": "go-logo.svg"
+		}
+	],
+	"misc": [
+		{
+			"label": "Shopware",
+			"lvl": 96,
+			"color": "#189EFF",
+			"img": "shopware-logo.webp"
+		},
+		{
+			"label": "Sass",
+			"lvl": 100,
+			"color": "#CD6799",
+			"img": "sass-logo.webp"
+		},
+		{
+			"label": "Svelte",
+			"lvl": 100,
+			"color": "#FF3E00",
+			"img": "svelte-logo.svg"
+		},
+		{
+			"label": "Vue",
+			"lvl": 75,
+			"color": "#42b883",
+			"img": "vue-logo.svg"
+		},
+		{
+			"label": "React",
+			"lvl": 85,
+			"color": "#61dafb",
+			"img": "react-logo.svg"
+		}
+	]
+}
