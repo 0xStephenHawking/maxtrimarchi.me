@@ -51,14 +51,14 @@
 					<small>© 2025 Max Trimarchi. All rights reserved.</small>
 					<br />
 					<i>
-						<small>If you don't like this webiste, I'm not a <del>designer</del>.</small>
+						<small>If you don't like this website, it's not my fault — I'm not a <del>designer</del>.</small>
 					</i>
 				</li>
 			</ul>
 
 			<ul>
 				<li>
-					<mark>Let's get in toch.</mark>
+					<mark>Let's get in touch.</mark>
 					<br />
 					<a href="mailto:info@maxtrimarchi.me">info@maxtrimarchi.me</a>
 				</li>

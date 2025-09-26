@@ -5,7 +5,7 @@
 <section id="hero">
 	<hgroup>
 		<h1>HI.</h1>
-		<h2>Self-tought software developer<span>|</span></h2>
+		<h2>Self-taught software developer.<span>|</span></h2>
 	</hgroup>
 
 	<a aria-label="Next section" href="#learn" class="contrast">

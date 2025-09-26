@@ -38,7 +38,7 @@
 </svelte:head>
 
 <section id="learn" bind:this={section}>
-	<h2>This is what I learned trough out the years.</h2>
+	<h2>This is what I have learned over the years.</h2>
 
 	<div class="languages-list d-flex flex-wrap">
 		{#each knowladge.languages as language}
