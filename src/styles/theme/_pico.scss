@@ -1,0 +1,50 @@
+@use '@picocss/pico/scss/pico' with (
+	$theme-color: 'red',
+	$modules: (
+		'content/embedded': false,
+		'forms/input-color': false,
+		'forms/input-date': false,
+		'forms/input-file': false,
+		'forms/input-range': false,
+		'forms/input-search': false,
+		'components/accordion': false,
+		'components/card': false,
+		'components/dropdown': false,
+		'components/loading': false,
+		'components/modal': false,
+		'components/tooltip': false,
+		'utilities/accessibility': false,
+		// Use custom theme
+		'themes/default': false
+	)
+);
+@use '@picocss/pico/scss/colors/utilities' with (
+	$palette: (
+		'color-families': (
+			red,
+			grey,
+			slate
+		),
+		'shades': (
+			350,
+			400,
+			450,
+			500,
+			550,
+			600,
+			650,
+			700,
+			750,
+			800,
+			850,
+			900,
+			950
+		),
+		'light-color': #fff,
+		'dark-color': #000
+	),
+	$utilities: (
+		'background-colors': false,
+		'color-for-background-colors': false
+	)
+);

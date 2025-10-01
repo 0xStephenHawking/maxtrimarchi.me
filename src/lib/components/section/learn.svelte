@@ -58,6 +58,12 @@
 				</progress>
 
 				<noscript>
+					<style>
+						small:not(noscript small) {
+							display: none;
+						}
+					</style>
+
 					<small>{language.lvl}%</small>
 				</noscript>
 
