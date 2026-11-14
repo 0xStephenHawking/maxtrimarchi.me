@@ -2,5 +2,5 @@
 
 Interactive football physics playground by Maximilian Trimarchi.
 
-- Site: https://maxtrimarchi.me/
-- GitHub: https://github.com/0xStephenHawking
+- [Site](https://maxtrimarchi.me/): homepage
+- [GitHub](https://github.com/0xStephenHawking): profile
