@@ -1,6 +1,11 @@
-import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from 'vite'
 
+// https://vite.dev/config/
 export default defineConfig({
-	plugins: [sveltekit()]
-});
+  plugins: [svelte()],
+  build: {
+    // Rapier's compat build inlines its WebAssembly binary as base64.
+    chunkSizeWarningLimit: 4000,
+  },
+})
