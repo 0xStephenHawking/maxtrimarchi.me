@@ -1,5 +1,8 @@
 {
-  "version": "1.0",
-  "host": "https://maxtrimarchi.me",
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "MT",
+    "documentationUrl": "https://maxtrimarchi.me/"
+  },
   "entries": []
 }
